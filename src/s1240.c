@@ -145,7 +145,9 @@ void s1240(pcurve,aepsge,clength,jstat)
       
       /* Test if the error is within the tolerance. */
       
-      if (fabs(tprev-tlength)/MAX(tprev,tlength) < aepsge) kcalc = 1;
+      if (fabs(tprev-tlength)/MAX(tprev,tlength) < aepsge){
+        kcalc = 1;
+      }
       
     }
   

@@ -275,6 +275,21 @@ enum
 #endif
 #if defined(SISLNEEDPROTOTYPES)
 
+// begin extra functions introduced by j@borges.xyz
+
+#ifndef  s1343
+extern
+#endif
+void GO_API s1343(SISLCurve *,double [],int,int,double, int, SISLCurve **,int *);
+
+
+#ifndef  S1613param
+extern
+#endif
+void GO_API s1613param(SISLCurve *,double,double **,double **,int *,int *);
+
+// end extra functions introduced by j@borges.xyz
+
 #ifndef CONSTRUCT
 extern
 #endif
@@ -753,12 +768,6 @@ void GO_API s1611(double [],int,int,double [],int,int,double,double,
 extern
 #endif
 void GO_API s1613(SISLCurve *,double,double **,int *,int *);
-
-// introduced by j@borges.xyz
-#ifndef  S1613param
-extern
-#endif
-void GO_API s1613param(SISLCurve *,double,double **,double **,int *,int *);
 
 #ifndef S1620
 extern

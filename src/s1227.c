@@ -295,6 +295,10 @@ void s1227(pc1,ider,ax,ileft,eder,jstat)
 	  for (kl=0; kl<kdim; kl++,kjh++,kl2++)
 	    {
 	      sder[kjh] += scoef[kl2]*tt;
+        if( kl == 0 ){
+          double v = scoef[kl2];
+          v -= 0.0;
+        }
 	    }
 	}
     }
