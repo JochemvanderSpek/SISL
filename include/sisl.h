@@ -288,6 +288,36 @@ extern
 #endif
 void GO_API s1613param(SISLCurve *,double,double **,double **,int *,int *);
 
+#ifndef  s2501
+extern
+#endif
+void GO_API s2501(SISLSurf *surf, int ider, double derive[], double normal[], double *gaussian, int *jstat);
+
+#ifndef  s2503
+extern
+#endif
+void GO_API s2503(SISLSurf *surf, int ider, double derive[], double normal[], double *gaussian, int *jstat);
+
+#ifndef  s2505
+extern
+#endif
+void GO_API s2505(SISLSurf *surf, int ider, double derive[], double normal[], double *gaussian, int *jstat);
+
+#ifndef  s2507
+extern
+#endif
+void GO_API s2507(SISLSurf *surf, int ider, double derive[], double normal[], double *gaussian, int *jstat);
+
+#ifndef  s2509
+extern
+#endif
+void GO_API s2509(SISLSurf *surf, int ider, double derive[], double normal[], double *gaussian, int *jstat);
+
+#ifndef  s2511
+extern
+#endif
+void GO_API s2511(SISLSurf *surf, int ider, double derive[], double normal[], double *gaussian, int *jstat);
+
 // end extra functions introduced by j@borges.xyz
 
 #ifndef CONSTRUCT

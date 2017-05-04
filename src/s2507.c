@@ -147,8 +147,9 @@ s2507(SISLSurf *surf, int ider, double derive[], double normal[],
 	 /((fundform[0]*fundform[2] - fundform[1]*fundform[1])
 	   *sqrt(fundform[0]*fundform[2] - fundform[1]*fundform[1]));
 
-     k1 = mc + sqrt(fabs(mc*mc - gc));
-     k2 = mc - sqrt(fabs(mc*mc - gc));
+     double sqrtmc2_gc = sqrt(fabs(mc*mc - gc));
+     k1 = mc + sqrtmc2_gc;
+     k2 = mc - sqrtmc2_gc;
 
      *totalCurvature = k1*k1 + k2*k2;
    }
