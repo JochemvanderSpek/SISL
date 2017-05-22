@@ -146,6 +146,9 @@ void s1963(pc,eeps,ilend,irend,iopen,itmax,rc,jstat)
 
       /* Success !  Go out ! */
 
+      // j@borges.xyz: jstat is not set if we jump here,
+      // which makes SISL assume that jstat is set to 0 when entering the function
+      *jstat = 0;
       goto out;
     }
 
